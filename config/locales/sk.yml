@@ -32,5 +32,11 @@ sk:
         title: Názov
         body: Obsah
         publish_date: Dátum zverejnenia
+        external_url: Verejná URL
+        image: &image Obrázok
     models:
       news_item: Novinka
+  shared:
+    admin:
+      image_picker:
+        image: *image

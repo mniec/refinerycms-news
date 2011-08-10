@@ -1,5 +1,8 @@
 class NewsItem < ActiveRecord::Base
-  translates :title, :body
+
+  belongs_to :image, :class_name => 'Image'
+
+  translates :title, :body, :external_url
   
   attr_accessor :locale # to hold temporarily
 
