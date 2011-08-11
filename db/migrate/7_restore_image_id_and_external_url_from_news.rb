@@ -1,4 +1,4 @@
-class RemoveImageIdAndExternalUrlFromNews < ActiveRecord::Migration
+class RestoreImageIdAndExternalUrlFromNews < ActiveRecord::Migration
 
   def self.up
     unless ::NewsItem.column_names.map(&:to_sym).include?(:external_url)
